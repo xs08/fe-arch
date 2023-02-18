@@ -1,0 +1,23 @@
+@import 'normalize.css';
+@import '@Styles/flex';
+
+* {
+  box-sizing: border-box;
+}
+
+// 通用字体定义
+@font-face {
+  font-family: Alibaba-PuHuiTi-Bold;
+  src: url('@Assets/fonts/Alibaba-PuHuiTi-Bold.woff2') format('woff2'),
+    url('@Assets/fonts/Alibaba-PuHuiTi-Bold.woff') format('woff'),
+    url('@Assets/fonts/Alibaba-PuHuiTi-Bold.otf') format('otf'),
+    url('@Assets/fonts/Alibaba-PuHuiTi-Bold.ttf');
+  font-display: swap;
+}
+
+// 全局 Loading
+.App__Global--loading {
+  @include flex-center;
+  width: 100%;
+  min-height: 100vh;
+}

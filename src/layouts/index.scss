@@ -1,0 +1,22 @@
+@import '@Styles/flex';
+
+.navs {
+  ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+  }
+
+  .test {
+    color: #fff;
+  }
+
+  .some-style {
+    box-sizing: border-box;
+  }
+
+  li {
+    font-family: Alibaba-PuHuiTi-Bold, Arial, sans-serif;
+    margin-right: 1em;
+  }
+}

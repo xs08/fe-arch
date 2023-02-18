@@ -1,0 +1,33 @@
+//  动画
+
+// 展示隐藏主要动画
+@mixin animation-main {
+  animation: animation-main 0.5s;
+
+  @keyframes animation-main {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+// 加载动画
+@mixin animation-loading {
+  animation: animation-loading 1.2s ease-in infinite;
+
+  @keyframes animation-loading {
+    from {
+      transform: rotate(0);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}

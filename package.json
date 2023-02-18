@@ -1,0 +1,48 @@
+{
+  "private": true,
+  "author": "xss22 <xiansong.xxs@gmail.com>",
+  "scripts": {
+    "build:beta:h5": "cross-env BUILD_ENV=beta BUILD_APP=h5 umi build",
+    "build:beta:pc": "cross-env BUILD_ENV=beta BUILD_APP=pc umi build",
+    "build:prod:h5": "cross-env BUILD_ENV=prod BUILD_APP=h5 umi build",
+    "build:prod:pc": "cross-env BUILD_ENV=prod BUILD_APP=pc umi build",
+    "dev:h5": "cross-env BUILD_ENV=dev BUILD_APP=h5 umi dev",
+    "dev:pc": "cross-env BUILD_ENV=dev BUILD_APP=pc umi dev",
+    "postinstall": "umi setup",
+    "prepare": "husky install",
+    "setup": "umi setup",
+    "start": "npm run dev:pc"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.2",
+    "antd": "^5.2.1",
+    "fabric": "^6.0.0-beta1",
+    "normalize.css": "^8.0.1",
+    "react-redux": "^8.0.5",
+    "umi": "^4.0.50"
+  },
+  "devDependencies": {
+    "@teamsupercell/typings-for-css-modules-loader": "^2.5.2",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@umijs/lint": "^4.0.51",
+    "autoprefixer": "^10.4.13",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.34.0",
+    "husky": "^8",
+    "lint-staged": "^13",
+    "postcss-import": "^15.1.0",
+    "postcss-nested": "^6.0.0",
+    "postcss-preset-env": "^8.0.1",
+    "prettier": "^2",
+    "prettier-plugin-organize-imports": "^2",
+    "prettier-plugin-packagejson": "^2",
+    "sass": "^1.58.1",
+    "stylelint": "^15.1.0",
+    "stylelint-config-recess-order": "^4.0.0",
+    "stylelint-config-recommended-scss": "^9.0.1",
+    "stylelint-config-standard": "^30.0.1",
+    "typescript": "^4",
+    "webpack": "^5.75.0"
+  }
+}

@@ -1,0 +1,23 @@
+# umi
+node_modules
+.umi
+.umi-production
+
+# dist
+/build
+/dist
+
+# misc
+.DS_Store
+.gitignore
+.gitkeep
+.dockerignore
+.eslintignore
+.eslintcache
+.prettierignore
+.editorconfig
+.stylelintcache
+.history
+
+*.toml
+*.lock

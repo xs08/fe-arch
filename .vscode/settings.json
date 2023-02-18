@@ -1,0 +1,77 @@
+{
+  "files.autoSave": "onWindowChange", // 离开 vscode 时自动保存
+  "files.eol": "\n", // LF格式换行
+  "files.insertFinalNewline": true, // 保存时最后添加一个空行
+  "files.trimFinalNewlines": true, // 保存时将最后所有空行合并一个空行
+  "editor.rulers": [80, 110], // 显示宽度指示线
+  "editor.tabSize": 2, // tab 宽度为两个空格
+  "editor.insertSpaces": true, // tab 改为 空格
+  "editor.formatOnSave": true, // 保存时候自动格式化
+  // 保存时候执行的操作
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": false
+  },
+  // JSON 关闭保存时自动格式化
+  "[jsonc]": {
+    "editor.formatOnSave": false
+  },
+  "[json]": {
+    "editor.formatOnSave": false
+  },
+  "eslint.packageManager": "yarn",
+  "eslint.run": "onSave", // 保存时候执行 eslint
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"], // 需要检验的文件类型
+  // 执行自动格式化的插件,使用 prettier 执行
+  "editor.defaultFormatter": "esbenp.prettier-vscode", // preitter 代码格式化
+  "[javascript,javascriptreact,typescript,typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[ignore]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[dotenv]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[properties]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "markdownlint.config": {
+    "default": true,
+    "MD013": false,
+    "MD029": false,
+    // "MD029": {
+    //   "style": "ordered"
+    // },
+    "no-hard-tabs": false
+  },
+  "[markdown]": {
+    "editor.formatOnSave": false,
+    "editor.formatOnPaste": true
+  },
+  // 拼写检测
+  "cSpell.words": [
+    "alicdn",
+    "alilog",
+    "antd",
+    "aplus",
+    "Luban",
+    "metas",
+    "mlog",
+    "navs",
+    "packagejson",
+    "qisong",
+    "reduxjs",
+    "songsong",
+    "stylelint",
+    "stylelintrc",
+    "teamsupercell",
+    "topbar",
+    "umijs"
+  ]
+}

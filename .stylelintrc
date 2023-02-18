@@ -1,0 +1,25 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-recess-order",
+    "stylelint-config-recommended-scss"
+  ],
+  "rules": {
+    "import-notation": "string",
+    "declaration-empty-line-before": null,
+    "selector-class-pattern": null,
+    "max-nesting-depth": null,
+    "selector-max-compound-selectors": null,
+    "no-descending-specificity": true,
+    "function-name-case": "lower",
+    "value-keyword-case": "lower",
+    "alpha-value-notation": "number",
+    "color-function-notation": "legacy",
+    "selector-no-qualifying-type": [true, { "ignore": ["attribute", "class", "id"] }],
+    "order/properties-alphabetical-order": null,
+    "order/properties-order": null,
+    "scss/dollar-variable-pattern": ["[a-z][a-zA-Z]+"],
+    "scss/selector-no-redundant-nesting-selector": [true, { "ignoreKeywords": ["when", "media", "and"] }],
+    "scss/at-import-no-partial-leading-underscore": true
+  }
+}

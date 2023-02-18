@@ -1,0 +1,27 @@
+# **/*.svg
+# **/*.ejs
+# **/*.html
+package.json
+Dockerfile*
+
+.umi
+.umi-production
+.umi-test
+
+.DS_Store
+.dockerignore
+.eslintignore
+.eslintcache
+.editorconfig
+.prettierignore
+.stylelintrc
+.stylelintcache
+.gitkeep
+.gitignore
+.history
+
+*.lock
+*.toml
+*.md
+*.png
+*.jpeg

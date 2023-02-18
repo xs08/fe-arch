@@ -1,0 +1,62 @@
+// cover 背景
+@mixin bg-cover($image-src: '') {
+  @if $image-src != '' {
+    background-image: url($image-src);
+  }
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+// contain 背景
+@mixin bg-contain($image-src: '') {
+  @if $image-src != '' {
+    background-image: url($image-src);
+  }
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+// 正方形
+@mixin squr($width) {
+  width: $width;
+  height: $width;
+}
+
+// 文字超长显示省略号
+@mixin text-ellipsis($line-number: 1) {
+  overflow: hidden;
+
+  @if $line-number != '' {
+    // stylelint-disable-next-line value-no-vendor-prefix
+    display: -webkit-box;
+    -webkit-line-clamp: $line-number;
+    -webkit-box-orient: vertical;
+  }
+  // stylelint-disable-next-line
+  @else {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+// 绝对填充
+@mixin absolute-fill() {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+// fixed 填充
+@mixin fixed-fill() {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
